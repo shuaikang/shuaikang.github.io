@@ -10,12 +10,12 @@ $(function () {
 	var offsetY = $loveHeart.height() / 2 - 55;
     $garden = $("#garden");
     gardenCanvas = $garden[0];
-	gardenCanvas.width = $("#loveHeart").width();
-    gardenCanvas.height = $("#loveHeart").height()
+		gardenCanvas.width = $("#loveHeart").width();
+    gardenCanvas.height = $("#loveHeart").height();
     gardenCtx = gardenCanvas.getContext("2d");
     gardenCtx.globalCompositeOperation = "lighter";
     garden = new Garden(gardenCtx, gardenCanvas);
-	
+
 	$("#content").css("width", $loveHeart.width() + $("#code").width());
 	$("#content").css("height", Math.max($loveHeart.height(), $("#code").height()));
 	$("#content").css("margin-top", Math.max(($window.height() - $("#content").height()) / 2, 10));
@@ -86,7 +86,7 @@ function startHeartAnimation() {
 				if (progress >= str.length) {
 					clearInterval(timer);
 				}
-			}, 75);
+			}, 100);
 		});
 		return this;
 	};
@@ -110,13 +110,13 @@ function timeElapse(date){
 	if (seconds < 10) {
 		seconds = "0" + seconds;
 	}
-	var result = "<span class=\"digit\">" + days + "</span> days <span class=\"digit\">" + hours + "</span> hours <span class=\"digit\">" + minutes + "</span> minutes <span class=\"digit\">" + seconds + "</span> seconds"; 
+	var result = "<span class=\"digit\">" + days + "</span> days <span class=\"digit\">" + hours + "</span> hours <span class=\"digit\">" + minutes + "</span> minutes <span class=\"digit\">" + seconds + "</span> seconds";
 	$("#elapseClock").html(result);
 }
 
 function showMessages() {
 	adjustWordsPosition();
-	$('#messages').fadeIn(5000, function() {
+	$('#messages').fadeIn(4000, function() {
 		showLoveU();
 	});
 }
@@ -132,5 +132,5 @@ function adjustCodePosition() {
 }
 
 function showLoveU() {
-	$('#loveu').fadeIn(3000);
+	$('#loveu').fadeIn(2000);
 }
