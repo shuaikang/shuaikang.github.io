@@ -43,6 +43,7 @@ function getHeartPoint(angle) {
 }
 
 function startHeartAnimation() {
+	$('body').scrollTop($('body').height());
 	var interval = 50;
 	var angle = 10;
 	var heart = new Array();
@@ -123,7 +124,7 @@ function showMessages() {
 
 function adjustWordsPosition() {
 	$('#words').css("position", "absolute");
-	$('#words').css("top", $("#garden").position().top + 195);
+	$('#words').css("top", $("#garden").position().top + 250);
 	$('#words').css("left", $("#garden").position().left + 70);
 }
 
@@ -132,5 +133,5 @@ function adjustCodePosition() {
 }
 
 function showLoveU() {
-	$('#loveu').fadeIn(2000);
+	$('#loveu').fadeIn(1500);
 }
