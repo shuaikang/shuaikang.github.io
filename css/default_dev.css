@@ -27,6 +27,8 @@ body {
 	font-size: 18px;
 	margin-top: 10px;
 	margin-bottom: 10px;
+	font-style:normal;
+	font-family:Times New Roman;
 }
 
 #words {
@@ -38,13 +40,14 @@ body {
 
 #messages{
 	font-family:Times New Roman;
-  font-style:italic;
+	font-style:italic;
 	display: none;
 }
 
 #elapseClock .digit{
 	font-family: "digit";
 	font-size: 36px;
+	font-style: normal;
 }
 
 #loveu{
