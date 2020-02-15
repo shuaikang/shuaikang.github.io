@@ -1,0 +1,13 @@
+html,
+body {
+  padding: 0;
+  margin: 0; }
+
+.hml {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  padding-top: 20%; }
+  .hml__image {
+    width: 80%;
+    border: 2px solid #ddd; }
